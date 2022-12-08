@@ -1,0 +1,9 @@
+flask~=2.1.1
+requests~=2.27.1
+pandas~=1.4.1
+line-bot-sdk~=2.2.1
+datetime~=4.4
+matplotlib~=3.5.2
+gspread~=5.3.2
+emoji~=1.7.0
+pymssql~=2.2.4
