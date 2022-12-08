@@ -5,11 +5,11 @@
 與其求助於人，不如自己動手做最好，我們該主題的主角「LINE Bot」就相當適合。
 
 ## 軟體:
-1.Python-jupyter
-2.LINE developer
-3.GitHub
-4.Heroku
+  1. Python-jupyter
+  2. LINE developer
+  3. GitHub
+  4. Heroku
 
 ## 功能:
-1.連結學校的官網
-2.查詢股市資料與財報資料
+  1. 連結學校的官網
+  2. 查詢股市資料與財報資料
