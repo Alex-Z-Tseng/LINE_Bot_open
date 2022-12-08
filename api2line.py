@@ -7,7 +7,7 @@ def d_closes_api2df(stock='*'):
 
     file_type = 'json'  # 傳輸格式
     column = '*'
-    url = 'https://192.168.89.111:8080/d_closes?file_type={}&stock={}&column={}'.format(file_type, stock, column)
+    url = f'https://apiedu.a-bit.com.tw/d_closes?file_type={file_type}&stock={stock}&column={column}'
     res = requests.get(url, verify=False)
     data = res.text  # data為抓取下來的字串
 
@@ -24,7 +24,7 @@ def m_revenues_api2df(stock='*'):
 
     file_type = 'json'  # 傳輸格式
     column = '*'
-    url = f'https://192.168.89.111:8080/m_revenues?file_type={file_type}&stock={stock}&column={column}'
+    url = f'https://apiedu.a-bit.com.tw/m_revenues?file_type={file_type}&stock={stock}&column={column}'
     res = requests.get(url, verify=False)
     data = res.text  # data為抓取下來的字串
 
@@ -41,7 +41,7 @@ def three_investors_api2df(stock='*'):
 
     file_type = 'json'  # 傳輸格式
     column = '*'
-    url = f'https://192.168.89.111:8080/three_investors?file_type={file_type}&stock={stock}&column={column}'
+    url = f'https://apiedu.a-bit.com.tw/three_investors?file_type={file_type}&stock={stock}&column={column}'
     res = requests.get(url, verify=False)
     data = res.text  # data為抓取下來的字串
 
@@ -57,7 +57,7 @@ def dividend_policies_api2df(stock='*'):
 
     file_type = 'json'  # 傳輸格式
     column = '*'
-    url = f'https://192.168.89.111:8080/dividend_information?file_type={file_type}&stock={stock}&column={column}'
+    url = f'https://apiedu.a-bit.com.tw/dividend_information?file_type={file_type}&stock={stock}&column={column}'
     res = requests.get(url, verify=False)
     data = res.text  # data為抓取下來的字串
 
@@ -74,7 +74,7 @@ def company_details_api2df(stock='*'):
 
     file_type = 'json'  # 傳輸格式
     column = '*'
-    url = f'https://192.168.89.111:8080/company_details?file_type={file_type}&stock={stock}&column={column}'
+    url = f'https://apiedu.a-bit.com.tw/company_details?file_type={file_type}&stock={stock}&column={column}'
     res = requests.get(url, verify=False)
     data = res.text  # data為抓取下來的字串
 
@@ -92,7 +92,7 @@ def market_capitalization(stock='*'):
 
     file_type = 'json'  # 傳輸格式
     column = '*'
-    url = f'https://192.168.89.111:8080/company_details?file_type={file_type}&stock={stock}&column={column}'
+    url = f'https://apiedu.a-bit.com.tw/company_details?file_type={file_type}&stock={stock}&column={column}'
     res = requests.get(url, verify=False)
     data = res.text  # data為抓取下來的字串
 
