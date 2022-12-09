@@ -23,8 +23,11 @@ line_bot_api = LineBotApi(
 # 必須放上自己的Channel Secret
 handler = WebhookHandler('fdc26541e3c1e1ac13cccb6c714174f8')
 
-# push語法，目前用來測試連線
-# line_bot_api.push_message('U21f21eb94a4443c313a6b308f171cf3e', TextSendMessage(text='你可以開始了'))
+
+# 導入主頁面
+@app.route('/', methods=['GET'])
+def index():
+    return flask.render_template("index.html")
 
 
 # 監聽所有來自 /callback 的 Post Request
