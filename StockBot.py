@@ -24,11 +24,6 @@ line_bot_api = LineBotApi(
 handler = WebhookHandler('fdc26541e3c1e1ac13cccb6c714174f8')
 
 
-# 導入主頁面
-@app.route('/')
-def index():
-    return 'Hello world'
-
 # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
 def callback():
@@ -399,5 +394,5 @@ def handle_message(event):
 
 # 主程式
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 8080))
-    app.run(host='0.0.0.0', port=port, ssl_context=('server.crt', 'server.key'))
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
