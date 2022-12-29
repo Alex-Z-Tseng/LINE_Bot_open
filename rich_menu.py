@@ -3,10 +3,8 @@ import json
 from linebot import LineBotApi
 
 
-headers = {"Authorization": "Bearer 53LLHDTHwwijScC8HXTXWzSBKEo92Ke8kKLy3z7MZfeI2ciLcEzEa2ZLS6DlTnzLsRWfIbTpp4qMSBU+Dm+P+gZL"
-           "/Bns86AYyyso46GWQhC52znsXfHB23Rj8yZySp6+pPzg0lNwNDRJRe0GfPb/IwdB04t89/1O/w1cDnyilFU=", "Content-Type": "application/json"}
-line_bot_api = LineBotApi("53LLHDTHwwijScC8HXTXWzSBKEo92Ke8kKLy3z7MZfeI2ciLcEzEa2ZLS6DlTnzLsRWfIbTpp4qMSBU+Dm+P+gZL"
-           "/Bns86AYyyso46GWQhC52znsXfHB23Rj8yZySp6+pPzg0lNwNDRJRe0GfPb/IwdB04t89/1O/w1cDnyilFU=")
+headers = {"Authorization": "Bearer 你的token", "Content-Type": "application/json"}
+line_bot_api = LineBotApi("你的token")
 
 # # 設定rich_menu
 # body = {
